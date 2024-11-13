@@ -42,7 +42,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t git@github.com:drobaSZ/api.git #your-dockerhub-username/api .
+          docker build -t drobaSZ/api.git #your-dockerhub-username/api .
 
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
@@ -52,4 +52,4 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker push git@github.com:drobaSZ/api.git # your-dockerhub-username/simple-api
+          docker push drobaSZ/api.git # your-dockerhub-username/simple-api
